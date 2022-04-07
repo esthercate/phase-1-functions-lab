@@ -18,7 +18,7 @@ function calculatesFarePrice(start, destination) {
     if (distInFt <= 400) {
         return 0;
     } else if (distInFt > 400 && distInFt <= 2000) {
-        return Math.abs(distInFt - 400) * 2;
+        return Math.abs(distInFt - 400) * 0.02;
     } else if (distInFt > 2000 && distInFt <= 2500) {
         return 25;
     } else {
